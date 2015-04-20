@@ -1,0 +1,647 @@
+/*--------------------------------------
+    RESET
+--------------------------------------*/
+/* from: http://meyerweb.com/eric/tools/css/reset/ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  vertical-align: baseline;
+  font: inherit;
+  font-size: 100%;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+/*--------------------------------------
+    MAIN
+--------------------------------------*/
+body, html {
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  background-color: #c6e9f4;
+  color: black;
+  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body.bg-bubbles {
+  background-image: url("../img/bubble-texture.png");
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 1.5 / 1), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx) {
+  body.bg-bubbles {
+    -webkit-background-size: 717px 415px;
+    -moz-background-size: 717px 415px;
+    -ms-background-size: 717px 415px;
+    -o-background-size: 717px 415px;
+    background-size: 717px 415px;
+    background-image: url("../img/bubble-texture-x2.png");
+  }
+}
+
+.container {
+  -webkit-transition: width 1s;
+  -moz-transition: width 1s;
+  -ms-transition: width 1s;
+  -o-transition: width 1s;
+  transition: width 1s;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding-bottom: 50px;
+  width: 926px;
+}
+@media screen and (max-width: 533px) {
+  .container {
+    width: 314px;
+  }
+}
+@media screen and (max-width: 906px) and (min-width: 533px) {
+  .container {
+    width: 533px;
+  }
+}
+@media screen and (max-width: 1086px) and (min-width: 906px) {
+  .container {
+    width: 906px;
+  }
+}
+@media screen and (min-width: 1086px) {
+  .container {
+    width: 1086px;
+  }
+}
+
+/*--------------------------------------
+    NAVIGATION
+--------------------------------------*/
+.header_bar {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 39.2px;
+  border-bottom: solid 1px #224467;
+  background-color: #1c7297;
+  background-image: url("../img/twitter-bubbles.png"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0.25) 90%, rgba(0, 0, 0, 0.075) 100%), -webkit-linear-gradient(top, #2082ad 0%, #2082ad 100%);
+  background-image: url("../img/twitter-bubbles.png"), -moz-linear-gradient(top, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0.25) 90%, rgba(0, 0, 0, 0.075) 100%), -moz-linear-gradient(top, #2082ad 0%, #2082ad 100%);
+  background-image: url("../img/twitter-bubbles.png"), -ms-linear-gradient(top, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0.25) 90%, rgba(0, 0, 0, 0.075) 100%), -ms-linear-gradient(top, #2082ad 0%, #2082ad 100%);
+  background-image: url("../img/twitter-bubbles.png"), -o-linear-gradient(top, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0.25) 90%, rgba(0, 0, 0, 0.075) 100%), -o-linear-gradient(top, #2082ad 0%, #2082ad 100%);
+  background-image: url("../img/twitter-bubbles.png"), linear-gradient(top, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0.25) 90%, rgba(0, 0, 0, 0.075) 100%), linear-gradient(top, #2082ad 0%, #2082ad 100%);
+  -webkit-background-size: 39.9px 31.5px, 100%, 100%;
+  -moz-background-size: 39.9px 31.5px, 100%, 100%;
+  -ms-background-size: 39.9px 31.5px, 100%, 100%;
+  -o-background-size: 39.9px 31.5px, 100%, 100%;
+  background-size: 39.9px 31.5px, 100%, 100%;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  text-align: center;
+  text-shadow: 1px -1px 0 rgba(0, 0, 0, 0.5);
+  font-weight: 200;
+  font-size: 15.68px;
+  line-height: 42.336px;
+  -webkit-transition: height 1s, font-size 1s, line-height 1s, width 1s;
+  -moz-transition: height 1s, font-size 1s, line-height 1s, width 1s;
+  -ms-transition: height 1s, font-size 1s, line-height 1s, width 1s;
+  -o-transition: height 1s, font-size 1s, line-height 1s, width 1s;
+  transition: height 1s, font-size 1s, line-height 1s, width 1s;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 1.5 / 1), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx) {
+  .header_bar {
+    background-image: url("../img/twitter-bubbles-x2.png"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0.25) 90%, rgba(0, 0, 0, 0.075) 100%), -webkit-linear-gradient(top, #2082ad 0%, #2082ad 100%);
+    background-image: url("../img/twitter-bubbles-x2.png"), -moz-linear-gradient(top, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0.25) 90%, rgba(0, 0, 0, 0.075) 100%), -moz-linear-gradient(top, #2082ad 0%, #2082ad 100%);
+    background-image: url("../img/twitter-bubbles-x2.png"), -ms-linear-gradient(top, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0.25) 90%, rgba(0, 0, 0, 0.075) 100%), -ms-linear-gradient(top, #2082ad 0%, #2082ad 100%);
+    background-image: url("../img/twitter-bubbles-x2.png"), -o-linear-gradient(top, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0.25) 90%, rgba(0, 0, 0, 0.075) 100%), -o-linear-gradient(top, #2082ad 0%, #2082ad 100%);
+    background-image: url("../img/twitter-bubbles-x2.png"), linear-gradient(top, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0.25) 90%, rgba(0, 0, 0, 0.075) 100%), linear-gradient(top, #2082ad 0%, #2082ad 100%);
+    -webkit-background-size: 57px 45px, 100%, 100%;
+    -moz-background-size: 57px 45px, 100%, 100%;
+    -ms-background-size: 57px 45px, 100%, 100%;
+    -o-background-size: 57px 45px, 100%, 100%;
+    background-size: 57px 45px, 100%, 100%;
+    background-image: url("../img/twitter-bubbles-x2.png");
+  }
+}
+.header_bar a {
+  display: inline-block;
+  margin: 0 10%;
+  width: 150px;
+  height: 100%;
+  border-right: solid 1px rgba(34, 68, 103, 0);
+  border-left: solid 1px rgba(34, 68, 103, 0);
+  color: white;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+@media screen and (max-width: 533px) {
+  .header_bar a {
+    width: 96px;
+  }
+}
+@media screen and (max-width: 906px) and (min-width: 1086px) {
+  .header_bar a {
+    width: 150px;
+  }
+}
+.header_bar a:first-child {
+  margin-left: 0;
+}
+.header_bar a:last-child {
+  margin-right: 0;
+}
+.header_bar a:hover {
+  border-right: solid 1px rgba(34, 68, 103, 0.4);
+  border-left: solid 1px rgba(34, 68, 103, 0.4);
+  background-color: #186282;
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.25) 10.5%, rgba(0, 0, 0, 0) 82%), -webkit-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.06) 5%, rgba(0, 0, 0, 0) 15%), -webkit-linear-gradient(right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.06) 5%, rgba(0, 0, 0, 0) 15%), -webkit-linear-gradient(top, #2082ad 0%, #2082ad 100%);
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.25) 10.5%, rgba(0, 0, 0, 0) 82%), -moz-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.06) 5%, rgba(0, 0, 0, 0) 15%), -moz-linear-gradient(right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.06) 5%, rgba(0, 0, 0, 0) 15%), -moz-linear-gradient(top, #2082ad 0%, #2082ad 100%);
+  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.25) 10.5%, rgba(0, 0, 0, 0) 82%), -ms-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.06) 5%, rgba(0, 0, 0, 0) 15%), -ms-linear-gradient(right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.06) 5%, rgba(0, 0, 0, 0) 15%), -ms-linear-gradient(top, #2082ad 0%, #2082ad 100%);
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.25) 10.5%, rgba(0, 0, 0, 0) 82%), -o-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.06) 5%, rgba(0, 0, 0, 0) 15%), -o-linear-gradient(right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.06) 5%, rgba(0, 0, 0, 0) 15%), -o-linear-gradient(top, #2082ad 0%, #2082ad 100%);
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.25) 10.5%, rgba(0, 0, 0, 0) 82%), linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.06) 5%, rgba(0, 0, 0, 0) 15%), linear-gradient(right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.06) 5%, rgba(0, 0, 0, 0) 15%), linear-gradient(top, #2082ad 0%, #2082ad 100%);
+}
+.header_bar a:active, .header_bar a.active {
+  border-right: solid 1px #224467;
+  border-left: solid 1px #224467;
+  background-color: #14516c;
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.4) 10.5%, rgba(0, 0, 0, 0) 82%), -webkit-linear-gradient(left, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.12) 5%, rgba(0, 0, 0, 0) 15%), -webkit-linear-gradient(right, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.12) 5%, rgba(0, 0, 0, 0) 15%), -webkit-linear-gradient(top, #2082ad 0%, #2082ad 100%);
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.4) 10.5%, rgba(0, 0, 0, 0) 82%), -moz-linear-gradient(left, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.12) 5%, rgba(0, 0, 0, 0) 15%), -moz-linear-gradient(right, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.12) 5%, rgba(0, 0, 0, 0) 15%), -moz-linear-gradient(top, #2082ad 0%, #2082ad 100%);
+  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.4) 10.5%, rgba(0, 0, 0, 0) 82%), -ms-linear-gradient(left, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.12) 5%, rgba(0, 0, 0, 0) 15%), -ms-linear-gradient(right, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.12) 5%, rgba(0, 0, 0, 0) 15%), -ms-linear-gradient(top, #2082ad 0%, #2082ad 100%);
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.4) 10.5%, rgba(0, 0, 0, 0) 82%), -o-linear-gradient(left, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.12) 5%, rgba(0, 0, 0, 0) 15%), -o-linear-gradient(right, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.12) 5%, rgba(0, 0, 0, 0) 15%), -o-linear-gradient(top, #2082ad 0%, #2082ad 100%);
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.4) 10.5%, rgba(0, 0, 0, 0) 82%), linear-gradient(left, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.12) 5%, rgba(0, 0, 0, 0) 15%), linear-gradient(right, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.12) 5%, rgba(0, 0, 0, 0) 15%), linear-gradient(top, #2082ad 0%, #2082ad 100%);
+}
+
+.button {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  border: solid 1px #224467;
+  border-radius: 5px;
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0.25) 90%, rgba(0, 0, 0, 0.075) 100%), -webkit-linear-gradient(top, #5ab8e0 0%, #5ab8e0 100%);
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0.25) 90%, rgba(0, 0, 0, 0.075) 100%), -moz-linear-gradient(top, #5ab8e0 0%, #5ab8e0 100%);
+  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0.25) 90%, rgba(0, 0, 0, 0.075) 100%), -ms-linear-gradient(top, #5ab8e0 0%, #5ab8e0 100%);
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0.25) 90%, rgba(0, 0, 0, 0.075) 100%), -o-linear-gradient(top, #5ab8e0 0%, #5ab8e0 100%);
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0.25) 90%, rgba(0, 0, 0, 0.075) 100%), linear-gradient(top, #5ab8e0 0%, #5ab8e0 100%);
+  -webkit-box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0, inset rgba(255, 255, 255, 0.4) 0 1px 0;
+  box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0, inset rgba(255, 255, 255, 0.4) 0 1px 0;
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 1px #224467;
+  font-weight: normal;
+  font-size: 18.2px;
+  line-height: 14px;
+}
+.button:hover {
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.1) 18%, rgba(0, 0, 0, 0.25) 90%, rgba(0, 0, 0, 0.075) 100%), -webkit-linear-gradient(top, #5ab8e0 0%, #5ab8e0 100%);
+  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.1) 18%, rgba(0, 0, 0, 0.25) 90%, rgba(0, 0, 0, 0.075) 100%), -moz-linear-gradient(top, #5ab8e0 0%, #5ab8e0 100%);
+  background-image: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0.1) 18%, rgba(0, 0, 0, 0.25) 90%, rgba(0, 0, 0, 0.075) 100%), -ms-linear-gradient(top, #5ab8e0 0%, #5ab8e0 100%);
+  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.1) 18%, rgba(0, 0, 0, 0.25) 90%, rgba(0, 0, 0, 0.075) 100%), -o-linear-gradient(top, #5ab8e0 0%, #5ab8e0 100%);
+  background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.1) 18%, rgba(0, 0, 0, 0.25) 90%, rgba(0, 0, 0, 0.075) 100%), linear-gradient(top, #5ab8e0 0%, #5ab8e0 100%);
+}
+.button:active {
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.3) 18%, rgba(0, 0, 0, 0.45) 90%, rgba(0, 0, 0, 0.275) 100%), -webkit-linear-gradient(top, #5ab8e0 0%, #5ab8e0 100%);
+  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.3) 18%, rgba(0, 0, 0, 0.45) 90%, rgba(0, 0, 0, 0.275) 100%), -moz-linear-gradient(top, #5ab8e0 0%, #5ab8e0 100%);
+  background-image: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0.3) 18%, rgba(0, 0, 0, 0.45) 90%, rgba(0, 0, 0, 0.275) 100%), -ms-linear-gradient(top, #5ab8e0 0%, #5ab8e0 100%);
+  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.3) 18%, rgba(0, 0, 0, 0.45) 90%, rgba(0, 0, 0, 0.275) 100%), -o-linear-gradient(top, #5ab8e0 0%, #5ab8e0 100%);
+  background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.3) 18%, rgba(0, 0, 0, 0.45) 90%, rgba(0, 0, 0, 0.275) 100%), linear-gradient(top, #5ab8e0 0%, #5ab8e0 100%);
+  color: white;
+}
+.button.close {
+  margin-bottom: 0;
+}
+
+/*--------------------------------------
+    Home Page
+--------------------------------------*/
+.home-cover {
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0.25) 90%, rgba(0, 0, 0, 0.075) 100%), -webkit-linear-gradient(top, #2082ad 0%, #2082ad 100%);
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0.25) 90%, rgba(0, 0, 0, 0.075) 100%), -moz-linear-gradient(top, #2082ad 0%, #2082ad 100%);
+  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0.25) 90%, rgba(0, 0, 0, 0.075) 100%), -ms-linear-gradient(top, #2082ad 0%, #2082ad 100%);
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0.25) 90%, rgba(0, 0, 0, 0.075) 100%), -o-linear-gradient(top, #2082ad 0%, #2082ad 100%);
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0.25) 90%, rgba(0, 0, 0, 0.075) 100%), linear-gradient(top, #2082ad 0%, #2082ad 100%);
+  -webkit-box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 5%;
+  min-height: 90%;
+  width: 100%;
+  border-bottom: solid 1px #224467;
+  background-color: #1c7297;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  color: white;
+  text-align: center;
+  text-shadow: 1px -1px 0 rgba(0, 0, 0, 0.5);
+  font-weight: 200;
+  font-size: 22.4px;
+  line-height: 42.336px;
+}
+.home-cover .logo {
+  background-image: url("../img/twitter-bubbles-large.png");
+  background-image: url("../img/twitter-bubbles-large.png");
+  background-image: url("../img/twitter-bubbles-large.png");
+  background-image: url("../img/twitter-bubbles-large.png");
+  background-image: url("../img/twitter-bubbles-large.png");
+  -webkit-background-size: 182px 138px;
+  -moz-background-size: 182px 138px;
+  -ms-background-size: 182px 138px;
+  -o-background-size: 182px 138px;
+  background-size: 182px 138px;
+  margin: 7% auto 30px;
+  width: 182px;
+  height: 138px;
+  opacity: .5;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 1.5 / 1), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx) {
+  .home-cover .logo {
+    background-image: url("../img/twitter-bubbles-x2.png");
+    background-image: url("../img/twitter-bubbles-x2.png");
+    background-image: url("../img/twitter-bubbles-x2.png");
+    background-image: url("../img/twitter-bubbles-x2.png");
+    background-image: url("../img/twitter-bubbles-x2.png");
+    -webkit-background-size: 182px 138px;
+    -moz-background-size: 182px 138px;
+    -ms-background-size: 182px 138px;
+    -o-background-size: 182px 138px;
+    background-size: 182px 138px;
+    background-image: url("../img/twitter-bubbles-large-x2.png");
+  }
+}
+.home-cover h1 {
+  margin: 0 auto 20px;
+  margin-bottom: 20px;
+  max-width: 600px;
+  font-weight: 200;
+  font-size: 42px;
+  line-height: 49px;
+}
+.home-cover h3 {
+  margin: 0 auto 20px;
+  max-width: 400px;
+  font-weight: 200;
+  font-size: 21px;
+  line-height: 28px;
+  opacity: .7;
+}
+
+/*--------------------------------------
+    Bubbles Page
+--------------------------------------*/
+.bubbles .container {
+  padding-bottom: 0px;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+canvas:focus {
+  outline: 0;
+}
+
+.behind {
+  overflow: hidden;
+}
+
+.curtain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1001;
+}
+
+.modal {
+  width: 533px;
+  height: 90%;
+  margin: 2% auto;
+  background: #fff;
+  border: 1px solid #6b8994;
+  -webkit-box-shadow: 1px 1px 8px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 8px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  color: #000;
+  overflow-y: auto;
+}
+.modal h1 {
+  font-size: 2em;
+  color: #5ab8e0;
+  font-weight: 200;
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #a6b8bf;
+  padding: 0 10px 6px;
+  text-transform: lowercase;
+}
+.modal table {
+  color: gray;
+  font-size: 1.3em;
+  line-height: 1.2em;
+  font-weight: 200;
+  margin: 0 20px;
+  padding: 0;
+}
+.modal table img {
+  margin-right: 10px;
+}
+.modal td {
+  vertical-align: middle;
+  padding: 10px 0;
+}
+.modal div.centered {
+  text-align: center;
+}
+.modal div .alt {
+  display: inline-block;
+  margin: 10px 0 20px;
+  text-decoration: none;
+  font-size: .8em;
+  color: #62a4c4;
+}
+@media screen and (max-width: 533px) {
+  .modal {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    margin: 0;
+  }
+}
+
+/*--------------------------------------
+    Friends Page
+--------------------------------------*/
+li {
+  display: inline-block;
+  float: left;
+  margin: 15px;
+  min-height: 73px;
+  width: 433px;
+  -webkit-transition: width 1s, margin 1s;
+  -moz-transition: width 1s, margin 1s;
+  -ms-transition: width 1s, margin 1s;
+  -o-transition: width 1s, margin 1s;
+  transition: width 1s, margin 1s;
+}
+@media screen and (max-width: 533px) {
+  li {
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 294px;
+  }
+}
+@media screen and (max-width: 906px) and (min-width: 533px) {
+  li {
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 513px;
+  }
+}
+@media screen and (max-width: 1086px) and (min-width: 906px) {
+  li {
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 433px;
+  }
+}
+@media screen and (min-width: 1086px) {
+  li {
+    margin-right: 15px;
+    margin-left: 15px;
+    width: 513px;
+  }
+}
+li .profile_pic {
+  display: inline-block;
+  overflow: hidden;
+  margin-top: 5px;
+  width: 73px;
+  height: 73px;
+  border: solid 2px #2082ad;
+  border-radius: 36.5px;
+  background: #c6e9f4;
+  -webkit-transition: width 1s, height 1s, border-radius 1s;
+  -moz-transition: width 1s, height 1s, border-radius 1s;
+  -ms-transition: width 1s, height 1s, border-radius 1s;
+  -o-transition: width 1s, height 1s, border-radius 1s;
+  transition: width 1s, height 1s, border-radius 1s;
+}
+@media screen and (max-width: 533px) {
+  li .profile_pic {
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+  }
+}
+@media screen and (max-width: 906px) and (min-width: 533px) {
+  li .profile_pic {
+    width: 73px;
+    height: 73px;
+    border-radius: 36.5px;
+  }
+}
+li .tweet {
+  position: relative;
+  display: inline-block;
+  padding: 15px;
+  min-height: 116px;
+  width: 320px;
+  border: solid 1px #a6b8bf;
+  border-radius: 5px;
+  background-color: white;
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.06) 0%, rgba(0, 0, 0, 0.1) 5%, rgba(0, 0, 0, 0) 25%);
+  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.06) 0%, rgba(0, 0, 0, 0.1) 5%, rgba(0, 0, 0, 0) 25%);
+  background-image: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0.06) 0%, rgba(0, 0, 0, 0.1) 5%, rgba(0, 0, 0, 0) 25%);
+  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.06) 0%, rgba(0, 0, 0, 0.1) 5%, rgba(0, 0, 0, 0) 25%);
+  background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.06) 0%, rgba(0, 0, 0, 0.1) 5%, rgba(0, 0, 0, 0) 25%);
+  -webkit-box-shadow: 1px 1px 8px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 8px 0 rgba(0, 0, 0, 0.3);
+  vertical-align: top;
+  -webkit-transition: width 1s;
+  -moz-transition: width 1s;
+  -ms-transition: width 1s;
+  -o-transition: width 1s;
+  transition: width 1s;
+}
+li .tweet:after {
+  position: absolute;
+  top: 20px;
+  left: -15px;
+  z-index: 1;
+  display: block;
+  width: 0;
+  border-width: 10px 15px 10px 0;
+  border-style: solid;
+  border-color: transparent white;
+  content: "";
+}
+li .tweet:before {
+  position: absolute;
+  top: 20px;
+  left: -16px;
+  z-index: 0;
+  display: block;
+  width: 0;
+  border-width: 10px 15px 10px 0;
+  border-style: solid;
+  border-color: transparent #a6b8bf;
+  content: "";
+}
+@media screen and (max-width: 533px) {
+  li .tweet {
+    width: 190px;
+  }
+}
+@media screen and (max-width: 906px) and (min-width: 533px) {
+  li .tweet {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 1086px) and (min-width: 906px) {
+  li .tweet {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 1086px) {
+  li .tweet {
+    width: 400px;
+  }
+}
+li .tweet_content {
+  min-height: 70px;
+}
+li .tweet_content h3 {
+  margin-bottom: 5px;
+  color: #224467;
+  font-weight: bold;
+  background-color: #fff;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+li .tweet_content h3 em {
+  color: #62a4c4;
+  font-weight: normal;
+  font-size: 12.6px;
+}
+li .tweet_content h3 a {
+  color: #224467;
+  text-decoration: none;
+}
+li .tweet_content h3 a:hover strong {
+  color: #2082ad;
+  text-decoration: underline;
+}
+li .tweet_content h3 a:hover em {
+  color: #62a4c4;
+  text-decoration: none;
+}
+li .tweet_content p {
+  color: black;
+  line-height: 17px;
+}
+li .tweet_content p .soft {
+  color: #bfbfbf;
+}
+li .tweet_content p a {
+  color: #62a4c4;
+  text-decoration: none;
+}
+li .tweet_content p a:hover {
+  color: #2082ad;
+  text-decoration: underline;
+}
+li .tweet_content p a:visited {
+  color: #224467;
+  text-decoration: underline;
+}
+li .tweet_content > span {
+  position: absolute;
+  top: 16px;
+  right: 15px;
+  color: #62a4c4;
+  font-size: 12.6px;
+}
+li .tweet_stats {
+  overflow: hidden;
+  margin: 10px -15px -15px;
+  padding: 10px 15px 10px;
+  height: 30px;
+  border-top: solid 1px #e1e7ea;
+  text-align: center;
+}
+li .tweet_stats .data {
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  min-height: 36.4px;
+  color: #62a4c4;
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: 25.2px;
+}
+li .tweet_stats .data:first-child {
+  margin-left: 0;
+}
+li .tweet_stats .label {
+  display: inline-block;
+  margin-left: 0;
+  padding-bottom: 6px;
+  width: 43px;
+  color: #a6a6a6;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: normal;
+  font-size: 9.1px;
+}
+
+.footer {
+  clear: both;
+  padding: 20px 10%;
+  border-top: solid 1px #224467;
+  background-color: #2082ad;
+  color: white;
+  text-align: center;
+  line-height: 1.4em;
+  opacity: .6;
+}
+.footer a {
+  color: #bfdae7;
+  text-decoration: none;
+  font-weight: bold;
+}
+.footer a:hover {
+  color: white;
+  text-decoration: underline;
+}
+.footer a:visited {
+  text-decoration: underline;
+}

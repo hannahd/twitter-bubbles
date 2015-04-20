@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Processing Page</title>
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="processing-1.4.1.js"></script>
+    <script type="text/javascript">
+    function drawSomeText(id) {
+      var pjs = Processing.getInstanceById(id);
+      var text = document.getElementById('inputtext').value;
+      pjs.drawText(text); 
+	}
+	var tId,pjs,cnt=0;
+	$(document).ready(function(){
+		tId=setInterval(function() {
+		    pjs = Processing.getInstanceById('bubble_stream');
+			pjs.createBubbles($('body').width(),$('body').height());
+			$('div').width($('body').width());
+			$('div').height($('body').height());
+		    console.log(pjs);
+		    if (pjs) clearInterval(tId);
+		  },500);
+		//var pjs = Processing.getInstanceById('mysketch2');
+		//var text = "testing";
+	    //pjs.drawText(text);
+		// bindJavascript();
+		// 		$(window).on('resize', resizeSketches);
+		// handle page resizing
+		/*$(window).resize(function() {
+			var pjs = Processing.getInstanceById('bubble_stream');
+			pjs.resizeSketch($('body').width(),$('body').height());
+		} );*/
+	});
+    </script>
+	<style type="text/css" media="screen">
+		html, body{
+			width:100%;
+			height:100%;
+			margin:0;
+			padding:0;
+		}
+		canvas:focus{
+			outline: 0;
+		}
+		div{
+			margin:0 auto;
+		}
+	</style>
+  </head>
+  <body>
+	<!-- <canvas data-processing-sources="bubbles_scale.pde" id="bubble_stream"></canvas> -->
+    <div>
+    	<canvas id="bubble_stream" data-processing-sources="bubbles_scale.pde"></canvas>
+    </div>
+ 		<!-- <input type="textfield" value="my text" id="inputtext">
+               <button type="button" onclick="drawSomeText('mysketch2')">place</button> -->
+    </body>
+</html>
